@@ -6,7 +6,7 @@ function Directors() {
   const directorItems = directors.map((director) => {
     return (
       <Director 
-      key={director.id}
+      key={director.name}
       name={director.name}
       movies={director.movies}
       />
@@ -21,9 +21,9 @@ function Directors() {
   )
 }
 
-function Director({key, name, movies}) {
+function Director({name, movies}) {
   const moviesList = movies.map((movie) => (
-    <li key={movie.id}>{movie}</li>
+    <li key={movie}>{movie}</li>
   ))
 
   return (

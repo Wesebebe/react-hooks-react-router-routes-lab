@@ -6,7 +6,7 @@ function Actors() {
   const actorsItems = actors.map((actor) => {
     return(
       <Actor
-      key={actor.id}
+      key={actor.name}
       name={actor.name}
       movies={actor.movies}
       />
@@ -21,7 +21,7 @@ function Actors() {
   )
 }
 
-function Actor({key, name, movies}) {
+function Actor({name, movies}) {
   const moviesList = movies.map((movie) => (
     <li key={movie}>{movie}</li>
   ))

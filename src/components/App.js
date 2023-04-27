@@ -17,12 +17,12 @@ function App() {
             <Actors />
           </Route>
           <Route path="/directors">
-            <Directors/>
+            <Directors />
           </Route>
           <Route path="/movies">
             <Movies />
           </Route>
-          <Route path="/home">
+          <Route path="/">
             <Home />
           </Route>
         </Switch>
